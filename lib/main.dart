@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getxx/StateManagement/Example2/sliderContainer.dart';
+import 'package:getxx/StateManagement/Example3/card.dart';
+
 import 'package:getxx/getBottomSheet.dart';
 import 'package:getxx/getDialog.dart';
 import 'package:getxx/getSnackbar.dart';
+
+import 'StateManagement/Counter/counter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,6 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -28,7 +34,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const bottomsheet(),
+      home:  CardWidget(),
     );
   }
 }
