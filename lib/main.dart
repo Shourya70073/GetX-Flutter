@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getxx/StateManagement/Example2/sliderContainer.dart';
-import 'package:getxx/StateManagement/Example3/card.dart';
 
-import 'package:getxx/getBottomSheet.dart';
-import 'package:getxx/getDialog.dart';
-import 'package:getxx/getSnackbar.dart';
+import 'GetXofTypeController/view.dart';
 
-import 'StateManagement/Counter/counter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,7 +29,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home:  CardWidget(),
+      home:  counter(),
     );
   }
 }
